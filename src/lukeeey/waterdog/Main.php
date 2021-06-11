@@ -29,7 +29,7 @@ class Main extends PluginBase implements Listener {
 								} catch ( ReflectionException $e ) {}
 						  }
 					 }
-            if(isset($packet->clientData["WaterDog_RemoteIP"])) {
+            if(isset($packet->clientData["WaterDog_IP"])) {
                 $class = new ReflectionClass($event->getPlayer());
 
                 $prop = $class->getProperty("ip");
