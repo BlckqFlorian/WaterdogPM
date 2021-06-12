@@ -34,7 +34,7 @@ class Main extends PluginBase implements Listener {
 
                 $prop = $class->getProperty("ip");
                 $prop->setAccessible(true);
-                $prop->setValue($event->getPlayer(), $packet->clientData["WaterDog_RemoteIP"]);
+                $prop->setValue($event->getPlayer(), $packet->clientData["Waterdog_IP"]);
             }
         }
     }
